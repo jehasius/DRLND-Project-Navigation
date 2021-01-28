@@ -3,18 +3,11 @@
 ---
 
 [1. Introduction](#intro)
-
 [2. Getting Started](#start)
-
 [3. Learning Algorithm](#algo)
-
 [4. Plot of Rewards](#plot)
-
 [5. Simulation](#sim)
-
 [6. Ideas for future work](#future)
-
-
 
 [//]: # (Image References)
 [image1]: ./pictures/score_episode.png "Score over Episode"
@@ -94,7 +87,7 @@ The model was successfully trained and the agent was able to collecte the disire
 The alorithm is running quit well but we can try to tune hyper-parameters.
 Testing different network architecture that usees other layers like convolutions or use a deeper network architectures.
 Testing different variations of the learning algorithm like:
-- Prioritized Experience Replay
-- Dueling DQN
-- Rainbow
+- [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+- [Dueling DQN](https://arxiv.org/abs/1511.06581)
+- [Rainbow](https://arxiv.org/abs/1710.02298)
 
