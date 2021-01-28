@@ -1,34 +1,40 @@
-#Navigation Project - Udacity Deep Reinforcement Learning Expert Nanodegree
-####J. Hampe 01/2021.
+# Navigation Project - Udacity Deep Reinforcement Learning Expert Nanodegree
+#### J. Hampe 01/2021.
 ---
 
 [1. Introduction](#intro)
+
 [2. Getting Started](#start)
+
 [3. Learning Algorithm](#algo)
+
 [4. Plot of Rewards](#plot)
+
 [5. Simulation](#sim)
+
 [6. Ideas for future work](#future)
+
 
 
 [//]: # (Image References)
 [image1]: ./pictures/score_episode.png "Score over Episode"
 
 <a name="intro"></a>
-##1. Introduction
+## 1. Introduction
 This project was a part of the Udacity Deep Reinforcement Learning Expert Nanodegree course. The main task of this project, called Navigation, was to use Deep Q-Learning to train a machine learning agent to collect yellow bananas in an Unity environment. To find out more about the used Unity environment please look at [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents) explainations. The Deep Q-Learning algorithm is an algorithm of the Reinforment Learning class, in  which an optimal action-value function is represented as a neural network (instead of a table).
 
 ### 1.2 AI - Machine Learning - Reinforment Learning
 Machine learning, is a branch of artificial intelligence, focuses on learning patterns from data. The three main classes of machine learning algorithms include: unsupervised learning, supervised learning and reinforcement learning. Each class of algorithm learns from a different type of data. You can find a good overview over the main concepts of machine learning at [Unity Background-Machine-Learning](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Background-Machine-Learning.md)
 
 <a name="start"></a>
-##2. Getting Started
+## 2. Getting Started
 To set up and run the environment please follow the generell instructions in the [README.md](./README.md) and Jupyter notebook [Navigation.ipynb](./Navigation.ipynb). The Jupyter notebook als contains the whole project algorithms.
 
 <a name="algo"></a>
-##3. Learning Algoritm
+## 3. Learning Algoritm
 The used Deep Q-Learning algorithm is an algorithm of the Reinforment Learning class, in  which an optimal action-value function is represented as a neural network (instead of a table). To find out more abaot the algrithm please consider the research paper that introduces the Deep Q-Learning algorithm: [Human-level control through deep reinforcementlearning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
 
-###3.1. Network Architecture
+### 3.1. Network Architecture
 I this project I uesed a simple neural network architecture to represent the optimal action-value function as you can see below.
 
 ```python
@@ -39,7 +45,7 @@ QNetwork(
   (fc3): Linear(in_features=64, out_features=64, bias=True)
   (fc4): Linear(in_features=64, out_features=4, bias=True)
 ```
-###3.2 DRL Hyperparameter
+### 3.2 DRL Hyperparameter
 To tune the a Deep Reinforcement Learning system you are always have a bunch of hyperprameter in your algoritm. With this hyperparameters you can influence and optimize the hole learnig prozess.
 
 ```python
@@ -53,7 +59,7 @@ eps_start (float)         : starting value of epsilon, for epsilon-greedy action
 eps_end (float)           : minimum value of epsilon
 eps_decay (float)         : multiplicative factor (per episode) for decreasing epsilon
 ```
-###3.3 Build and train the Deep Q-Learning algorithm
+### 3.3 Build and train the Deep Q-Learning algorithm
 The following steps were used to build and train the Deep Q-Learning algorithm:
 
 1. Creating a network model QNetwork
@@ -63,7 +69,7 @@ The following steps were used to build and train the Deep Q-Learning algorithm:
 5. Load the model parameter in the neural network and test the agent (train_mode=False)
 
 <a name="plot"></a>
-##3. Plot of Rewards
+## 3. Plot of Rewards
 The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.Therefore a reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas. The Environment was solved in 660 episodes!	with an average score: 15.02 yellow bananas.
 ```python
 Episode 100	Average Score: 0.79
@@ -80,11 +86,11 @@ In the picture below you can see the approproate plot of the rewards during the 
 
 ![alt text][image1]
 
-##4. Simulation<a name="sim"></a>
+## 4. Simulation<a name="sim"></a>
 The model was successfully trained and the agent was able to collecte the disireed amound of yellow bananas.
 
-<a name="futur"></a>
-##4. Ideas for future work
+<a name="future"></a>
+## 5. Ideas for future work
 The alorithm is running quit well but we can try to tune hyper-parameters.
 Testing different network architecture that usees other layers like convolutions or use a deeper network architectures.
 Testing different variations of the learning algorithm like:
