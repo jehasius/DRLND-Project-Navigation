@@ -11,6 +11,7 @@
 
 [//]: # (Image References)
 [image1]: ./pictures/score_episode.png "Score over Episode"
+[image2]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
 <a name="intro"></a>
 ## 1. Introduction
@@ -77,10 +78,12 @@ Environment solved in 660 episodes!	Average Score: 15.02
 ```
 In the picture below you can see the approproate plot of the rewards during the training process as score over episodes.
 
-![alt text][image1]
+![alt text][image1]  
 
 ## 4. Simulation<a name="sim"></a>
 The model was successfully trained and the agent was able to collecte the disireed amound of yellow bananas.
+
+![alt text][image2]  
 
 <a name="future"></a>
 ## 5. Ideas for future work
