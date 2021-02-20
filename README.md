@@ -37,4 +37,4 @@ The task is episodic, and in order to solve the environment, your agent must get
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file.
 
 ### Report of the solution
-[here is a short report of the solution](/report.md)
+[here is a short report of the solution](/Report.md)
