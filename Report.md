@@ -2,12 +2,12 @@
 #### J. Hampe 01/2021.
 ---
 
-[1. Introduction](#intro)
-[2. Getting Started](#start)
-[3. Learning Algorithm](#algo)
-[4. Plot of Rewards](#plot)
-[5. Simulation](#sim)
-[6. Ideas for future work](#future)
+[1. Introduction](#intro)  
+[2. Getting Started](#start)  
+[3. Learning Algorithm](#algo)  
+[4. Plot of Rewards](#plot)  
+[5. Simulation](#sim)  
+[6. Ideas for future work](#future)  
 
 [//]: # (Image References)
 [image1]: ./pictures/score_episode.png "Score over Episode"
