@@ -81,7 +81,7 @@ In the picture below you can see the approproate plot of the rewards during the 
 ![alt text][image1]  
 
 ## 4. Simulation<a name="sim"></a>
-The model was successfully trained and the agent was able to collecte the disireed amound of yellow bananas.
+The model was successfully trained and the agent was able to collect the desired amound of yellow bananas.
 
 ![alt text][image2]  
 
