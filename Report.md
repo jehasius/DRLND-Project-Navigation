@@ -63,7 +63,7 @@ The following steps were used to build and train the Deep Q-Learning algorithm:
 5. Load the model parameter in the neural network and test the agent (train_mode=False)
 
 <a name="plot"></a>
-## 3. Plot of Rewards
+## 4. Plot of Rewards
 The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.Therefore a reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas. The Environment was solved in 660 episodes!	with an average score: 15.02 yellow bananas.
 ```python
 Episode 100	Average Score: 0.79
@@ -80,13 +80,13 @@ In the picture below you can see the approproate plot of the rewards during the 
 
 ![alt text][image1]  
 
-## 4. Simulation<a name="sim"></a>
+## 5. Simulation<a name="sim"></a>
 The model was successfully trained and the agent was able to collect the desired amound of yellow bananas.
 
 ![alt text][image2]  
 
 <a name="future"></a>
-## 5. Ideas for future work
+## 6. Ideas for future work
 The alorithm is running quit well but we can try to tune hyper-parameters.
 Testing different network architecture that usees other layers like convolutions or use a deeper network architectures.
 Testing different variations of the learning algorithm like:
